@@ -1,9 +1,13 @@
-# macOS
+# OS Files (Mac & Windows)
 .DS_Store
+**/.DS_Store
+Thumbs.db
+desktop.ini
 
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
 venv/
 .venv/
 
@@ -14,11 +18,16 @@ venv/
 .vscode/
 .idea/
 
-# Obsidian
-.obsidian/
+# Obsidian (keep plugins/settings, ignore local workspace)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/appearance.json
 
 # Secrets
 .env
+*.env
 
 # PDFs (use pdf-to-md.py to convert, then commit the markdown)
-raw/**/*.pdf
+# Block all PDFs anywhere in the repo to prevent repository bloat
+*.pdf
