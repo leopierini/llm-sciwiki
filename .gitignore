@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Editors
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Obsidian
+.obsidian/
+
+# Secrets
+.env
+
+# PDFs (use pdf-to-md.py to convert, then commit the markdown)
+raw/**/*.pdf
